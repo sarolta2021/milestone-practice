@@ -1,8 +1,85 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #efdad7;
+}
+
+.form {
+  margin: 20px;
+  text-align: center;
+}
+
+.form input {
+  width: 20%;
+  height: 10%;
+  border: none;
+  margin: 1%;
+  padding: 2%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  outline: none;
+}
+
+.form button {
+  width: 20%;
+  height: 10%;
+  padding: 2%;
+  margin-left: 1%;
+  border: none;
+  cursor: pointer;
+  background-color: #1572a1;
+  color: #9ad0ec;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+
+.form input,
+.form button,
+.pokemon-card {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 5px;
+}
+.pokemon-list {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3%;
+  max-width: 80vw;
+}
+
+.pokemon-card {
+  position: relative;
+  height: 30vh;
+  max-width: 20vw;
+  background-color: #9ad0ec;
+  color: #1572a1;
+}
+.pokemon-card img {
+  border-radius: 50%;
+  background-color: #efdad7;
+  position: absolute;
+  left: 8%;
+  top: 8%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.pokemon-card h1 {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.type {
+  position: absolute;
+  bottom: 30%;
+  right: 10%;
 }
